@@ -352,7 +352,14 @@ template {
 
 
 
-
+:root {
+  --left-menu-bg: #10B981;
+  --left-menu-text: #E9FDF7;
+  --card-left-border: #0C855D;
+  --main-window-bg: #79F3CB;
+  --top-menu-button: #13DF9B;
+  font-family: 'Ubuntu', Arial, Verdana, sans-serif;
+}
 
 
 
@@ -363,18 +370,34 @@ body {
   margin: 0;
 }
 
+h1 {
+  font-size: 28px;
+  padding: 10px;
+}
+
+li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  margin: 0 0 30px 10px;
+  padding: 0;
+}
+
 .grid-global-container {
   display: grid;
   grid-template-columns: minmax(200px, 1fr) 5fr;
 }
 
 .grid-left-side {
-  background-color: aqua;
-  
+  background-color: var(--left-menu-bg);
+  color: var(--left-menu-text);
+  font-size: 22px;
 }
 
 .grid-right-side {
-  border: 1px solid red;
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 1fr 10fr;
@@ -443,6 +466,8 @@ body {
   background-color: gold;
   height: 200px;
   width: 300px;
+  border-left: 4px solid var(--card-left-border);
+  border-radius: 6px;
 }
 
 
@@ -461,6 +486,7 @@ body {
 .side-wrapper {
   display: grid;
   align-content: center;
+  gap: 20px;
 }
 
 .side-title {
@@ -468,7 +494,7 @@ body {
   height: 30px;
   background-color: rgb(34, 128, 128);
   align-content: center;
-
+  gap: 20px;
 }
 
 .side-content {
@@ -479,4 +505,5 @@ body {
   justify-content: center;
   align-self: center;
   justify-self: center;
+  gap: 20px;
 }
