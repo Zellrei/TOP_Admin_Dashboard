@@ -452,11 +452,12 @@ ul {
   grid-template-rows: 1fr 10fr;
   justify-content: center;
   align-items: stretch;
+  background-color: var(--main-window-bg);
 }
 
 .grid-content-header {
   display: grid;
-
+  box-shadow: 3px 1px 15px 0 rgb(179, 179, 179);
   grid-template-rows: 70px 80px;
   margin-bottom: 10px;
 }
@@ -476,7 +477,7 @@ ul {
   grid-template-columns: 1fr 1fr;
   align-items: center;
   justify-items:stretch;
-  
+
 }
 
 .header-bottom-left {
@@ -524,8 +525,8 @@ ul {
 
 .card-title {
   display: grid;
-  height: 30px;
-  background-color: rgb(34, 128, 128);
+  height: 40px;
+  
   align-content: center;
 }
 
